@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>División entre dos enteros</title>
+</head>
+<body>
+    <h1>Ejercicio: División entre dos enteros</h1>
+    <button onclick="dividir()">Calcular división</button>
+
+    <script>
+        function dividir() {
+            // Pedir los números al usuario
+            let N = parseInt(prompt("Ingrese el primer número (N):"));
+            let M = parseInt(prompt("Ingrese el segundo número (M):"));
+
+            // Validar que M no sea cero
+            if (M === 0) {
+                alert("Error: No se puede dividir entre cero");
+            } else {
+                let cociente = N / M;
+                alert("El resultado de la división es: " + cociente);
+            }
+        }
+    </script>
+</body>
+</html>
